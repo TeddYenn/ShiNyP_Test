@@ -144,16 +144,24 @@ Page_1_Data_Input_Server = function(input, output, session) {
     shinyjs::show("inputStatus")
     withProgress(message = 'Processing data...', value = 0.05, {
       if (input$demoFile == "Chicken"){
-        vcf = fread("data/Chicken/Chicken_10k_209.vcf", header = TRUE, sep = "\t")
+        #vcf = fread("data/Chicken/Chicken_10k_209.vcf", header = TRUE, sep = "\t")
+        path = system.file("demo_data/Chicken", "Chicken_10k_209.vcf", package = "ShiNyP")
+        vcf = fread(path, header = TRUE, sep = "\t")
         fileName("Chicken")
       } else if (input$demoFile == "Wild rice"){
-        vcf = fread("data/Wild_Rice/Wildrice_13k_446.vcf", header = TRUE, sep = "\t")
+        #vcf = fread("data/Wild_Rice/Wildrice_13k_446.vcf", header = TRUE, sep = "\t")
+        path = system.file("demo_data/Wild_Rice", "Wildrice_13k_446.vcf", package = "ShiNyP")
+        vcf = fread(path, header = TRUE, sep = "\t")
         fileName("Wildrice")
       } else if (input$demoFile == "Human #HGDP"){
-        vcf = fread("data/Human_HGDP/Human_10k_929.vcf", header = TRUE, sep = "\t")
+        #vcf = fread("data/Human_HGDP/Human_10k_929.vcf", header = TRUE, sep = "\t")
+        path = system.file("demo_data/Human_HGDP", "Human_10k_929.vcf", package = "ShiNyP")
+        vcf = fread(path, header = TRUE, sep = "\t")
         fileName("Human")
       } else if (input$demoFile == "Yeast"){
-        vcf = fread("data/Yeast/Yeast_10k_1011.vcf", header = TRUE, sep = "\t")
+        #vcf = fread("data/Yeast/Yeast_10k_1011.vcf", header = TRUE, sep = "\t")
+        path = system.file("demo_data/Yeast", "Yeast_10k_1011.vcf", package = "ShiNyP")
+        vcf = fread(path, header = TRUE, sep = "\t")
         fileName("Yeast")
       }
       incProgress(0.1, message = "Processing data...")
