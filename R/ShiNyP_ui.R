@@ -1,5 +1,5 @@
-# ShiNyP_ui
-
+#' @title ShiNyP_ui
+#' @export
 ShiNyP_ui = tagList(
   CSS_UI(),
   navbarPage(

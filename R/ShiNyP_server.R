@@ -1,5 +1,5 @@
-# ShiNyP_server
-
+#' @title ShiNyP_server
+#' @export
 ShiNyP_server = function(input, output, session) {
   Page_0_Home_Server(input, output, session)
   Page_1_Data_Input_Server(input, output, session)

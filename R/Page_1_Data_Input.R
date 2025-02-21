@@ -1,6 +1,7 @@
 # Page_1_Data_Input
 ##### Page 1: Data Input #####
-
+#' @title Page_1_Data_Input_UI
+#' @export
 Page_1_Data_Input_UI = function(input, output, session) {
   tabPanel("Data Input",
            useShinyjs(),
@@ -67,7 +68,8 @@ Page_1_Data_Input_UI = function(input, output, session) {
                       ))
            ))
 }
-
+#' @title Page_1_Data_Input_Server
+#' @export
 Page_1_Data_Input_Server = function(input, output, session) {
   ##### Page 1-1: VCF #####
   observeEvent(input$file1, {

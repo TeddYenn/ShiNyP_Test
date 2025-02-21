@@ -1,6 +1,7 @@
 # Page_8_AI_Report
 ##### Page 8: AI Report #####
-
+#' @title Page_8_AI_Report_UI
+#' @export
 Page_8_AI_Report_UI = function() {
   tabPanel("AI Report",
            div(class = "AIReport-tab",
@@ -48,7 +49,8 @@ Page_8_AI_Report_UI = function() {
            )
   )
 }
-
+#' @title Page_8_AI_Report_Server
+#' @export
 Page_8_AI_Report_Server = function(input, output, session) {
   ##### Page 8: AI Report #####
   ##### STEP 1

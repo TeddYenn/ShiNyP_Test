@@ -1,6 +1,7 @@
 # Page_2_Data_QC
 ##### Page 2: Data QC #####
-
+#' @title Page_2_Data_QC_UI
+#' @export
 Page_2_Data_QC_UI = function() {
   tabPanel("Data QC",
            tabsetPanel(
@@ -134,7 +135,8 @@ Page_2_Data_QC_UI = function() {
                       ))
            ))
 }
-
+#' @title Page_2_Data_QC_Server
+#' @export
 Page_2_Data_QC_Server = function(input, output, session) {
   ##### Page 2-1: Sample QC #####
   output$fileSelection1 = renderUI({

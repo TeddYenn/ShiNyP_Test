@@ -1,6 +1,8 @@
 # Page_0_Home
 
 ##### Home Page #####
+#' @title Page_0_Home_UI
+#' @export
 Page_0_Home_UI = function() {
   tabPanel("Home",
            useShinyjs(),
@@ -48,7 +50,8 @@ Page_0_Home_UI = function() {
            )
   )
 }
-
+#' @title Page_0_Home_Server
+#' @export
 Page_0_Home_Server = function(input, output, session) {
   options(warn = -1)
   options(shiny.maxRequestSize = 10^5*1024^3) # Maximum size: 10^5 GB

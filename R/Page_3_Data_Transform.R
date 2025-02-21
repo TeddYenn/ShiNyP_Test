@@ -1,6 +1,7 @@
 # Page_3_Data_Transform
 ##### Page 3: Data Transform #####
-
+#' @title Page_3_Data_Transform_UI
+#' @export
 Page_3_Data_Transform_UI = function() {
   tabPanel("Data Transform",
            sidebarLayout(
@@ -83,7 +84,8 @@ Page_3_Data_Transform_UI = function() {
            ))
 }
 
-
+#' @title Page_3_Data_Transform_Server
+#' @export
 Page_3_Data_Transform_Server = function(input, output, session) {
   ##### Page 3: Data Conversion #####
   output$fileSelection3 = renderUI({

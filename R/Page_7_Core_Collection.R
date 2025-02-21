@@ -1,6 +1,7 @@
 # Page_7_Core_Collection
 ##### Page 7: Core Collection #####
-
+#' @title Page_7_Core_Collection_UI
+#' @export
 Page_7_Core_Collection_UI = function() {
   tabPanel("Core Collection",
            tabsetPanel(
@@ -95,7 +96,8 @@ Page_7_Core_Collection_UI = function() {
                       ))
            ))
 }
-
+#' @title Page_7_Core_Collection_Server
+#' @export
 Page_7_Core_Collection_Server = function(input, output, session) {
   ##### Page 7: Core Collection #####
   ##### Core Sample Set #####

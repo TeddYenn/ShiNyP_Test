@@ -1,6 +1,7 @@
 # Page_5_Genetic_Diversity
 ##### Page 5: Genetic Diversity #####
-
+#' @title Page_5_Genetic_Diversity_UI
+#' @export
 Page_5_Genetic_Diversity_UI = function() {
   tabPanel("Genetic Diversity",
            tabsetPanel(
@@ -150,7 +151,8 @@ Page_5_Genetic_Diversity_UI = function() {
                       ))
            ))
 }
-
+#' @title Page_5_Genetic_Diversity_Server
+#' @export
 Page_5_Genetic_Diversity_Server = function(input, output, session) {
   ##### Page 5: Genetic Diversity #####
   ##### Diversity Parameters #####

@@ -1,6 +1,7 @@
 # Page_4_Population_Structure
 ##### Page 4: Population Structure #####
-
+#' @title Page_4_Population_Structure_UI
+#' @export
 Page_4_Population_Structure_UI = function() {
   tabPanel("Population Structure",
            tabsetPanel(
@@ -278,7 +279,8 @@ Page_4_Population_Structure_UI = function() {
                       ))
            ))
 }
-
+#' @title Page_4_Population_Structure_Server
+#' @export
 Page_4_Population_Structure_Server = function(input, output, session) {
   ##### Page 4: Population Structure #####
   ##### PCA #####

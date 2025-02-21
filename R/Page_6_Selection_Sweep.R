@@ -1,6 +1,7 @@
 # Page_6_Selection_Sweep
 ##### Page 6: Selection Sweep #####
-
+#' @title Page_6_Selection_Sweep_UI
+#' @export
 Page_6_Selection_Sweep_UI = function() {
   tabPanel("Selection Sweep",
            tabsetPanel(
@@ -211,7 +212,8 @@ Page_6_Selection_Sweep_UI = function() {
                       ))
            ))
 }
-
+#' @title Page_6_Selection_Sweep_Server
+#' @export
 Page_6_Selection_Sweep_Server = function(input, output, session) {
   ##### Page 6: Selection Sweep #####
   ##### pcadapt #####
