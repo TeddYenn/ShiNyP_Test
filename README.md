@@ -8,6 +8,7 @@
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 <!-- badges: end -->
 
+
 ## 🔸Overview
 
 **_ShiNyP_ is a platform designed for real-time processing, analysis, and visualization of SNP datasets.**
