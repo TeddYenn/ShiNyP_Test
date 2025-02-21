@@ -2,5 +2,5 @@
 #'
 #' @export
 run_ShiNyP = function() {
-  shiny::shinyApp(ui = ShiNyP_ui(), server = ShiNyP_server)
+  shiny::shinyApp(ui = ShiNyP_ui, server = ShiNyP_server())
 }
